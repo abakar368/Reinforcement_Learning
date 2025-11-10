@@ -1,0 +1,12 @@
+alpha: 0.002
+batch_size: 256
+capacity: 100000
+env_name: FetchReachDense-v4
+epsilon: 0.05
+gamma: 0.99
+hidden_size: 256
+loss_fn: !!python/name:torch.nn.functional.smooth_l1_loss ''
+lr: 0.001
+optim: !!python/name:torch.optim.adamw.AdamW ''
+samples_per_epoch: 1000
+tau: 0.1
